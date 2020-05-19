@@ -1,15 +1,15 @@
 
 \begin{flushleft}
 The python code for the figure is
-\begin{lstlisting}[frame=single]
+\begin{lstlisting}
 ./code/traingle.py
 \end{lstlisting}
 The latex- tikz code is
-\begin{lstlisting}[frame=single]
+\begin{lstlisting}
 ./figs/triangle.tex
 \end{lstlisting}
 The above latex code can be compiled as standalone document
-\begin{lstlisting} [frame=single]
+\begin{lstlisting}
 ./figs/triangle_fig.tex
 \end{lstlisting}
 \end{flushleft}
@@ -30,26 +30,43 @@ The tables below are the values used for constructing the triangles in both Pyth
 \hline
  \multicolumn{2}{|c|}{Initial Input Values.} \\
 \hline
-$\vec{BC}(a)$ & $4\hat{i}$\\
+a & 4\\
 \hline
-$\vec{AC}(b)$ & $3\hat{j}$\\
+b & 3\\
 \hline
 $\angle(ACB)$ & $90^{\circ}$ \\
 \hline
 \end{tabular}
-\caption*{To construct $\triangle ACB$}
+\caption{To construct $\triangle ACB$}
 \end{table}
-
+The steps for constructing $\triangle ACB$ are
+\newline
+(i) Let$$ \vec{C}= \begin{pmatrix}0\\0\end{pmatrix}$$
+\newline
+(ii)$$\vec{A}=\begin{pmatrix}0\\3\end{pmatrix}$$
+\\
+(iii)$$\vec{B}=\begin{pmatrix}4\\0\end{pmatrix}$$
+\\
+Since, $\vec{M}$ is the midpoint of $\vec{AB}$ and $\vec{CD}$
+\\
+$$\vec{M}=(1/2)(\vec{A}+\vec{B})$$
+\\
+$$\vec{M}=\begin{pmatrix}2\\1.5\end{pmatrix}$$
+\\
+$$\vec{D}=2\vec{M}$$
+\\
+$$\vec{D}=\begin{pmatrix}4\\3\end{pmatrix}$$
 \begin{table}[H]
 \centering
 \begin{tabular}{ |p{3cm}|p{3cm}|  }
 \hline
  \multicolumn{2}{|c|}{Derived Values.} \\
 \hline
-$\vec{CM}$ & $2\hat{i}+1.5\hat{j}$\\
+$\vec{M}$ & $$\begin{pmatrix}2\\1.5\end{pmatrix}$$\\
+							
 \hline
-$\vec{CD}$ & $4\hat{i}+3\hat{j}$\\
+$\vec{D}$ & $$\begin{pmatrix}4\\3\end{pmatrix} $$\\
 \hline
 \end{tabular}
-\caption*{To construct $\triangle DCB$}
+\caption{To construct $\triangle DCB$}
 \end{table}
