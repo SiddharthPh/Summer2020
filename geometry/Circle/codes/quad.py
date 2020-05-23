@@ -1,10 +1,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from coeffs import *
-A = np.array([3,4])
-B = np.array([0,0])
-C = np.array([9,0])
-D = np.array([7,6])
+from quad1 import *
+#A = np.array([3,4])
+#B = np.array([0,0])
+#C = np.array([9,0])
+#D = np.array([7,6])
 
 R1=ang_bis(A,B,C)
 n1 = np.matmul(omat,R1)
