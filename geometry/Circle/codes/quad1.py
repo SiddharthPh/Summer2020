@@ -26,7 +26,7 @@ t1 = np.arccos((a**2+e**2-b**2)/(2*a*e))
 #theta2 = ABD
 t2 = np.arccos((d**2+e**2-c**2)/(2*d*e))
 
-print(t1*degrad,t2*degrad)
+#print(t1*degrad,t2*degrad)
 
 #Rotation matrix for t1
 P = np.array(([np.cos(t1),-np.sin(t1)],[np.sin(t1),np.cos(t1)]) )
@@ -39,14 +39,14 @@ A1,B1,D1 =  tri_vert(e,c,d)
 A = P@A1
 
 #Printing coordinates
-print(A1,A,B,C,D)
+#print(A1,A,B,C,D)
 
 #Verifying coordinates
-print(np.linalg.norm(A-B))
-print(np.linalg.norm(B-C))
-print(np.linalg.norm(C-D))
-print(np.linalg.norm(A-D))
-print(np.linalg.norm(B-D))
+#print(np.linalg.norm(A-B))
+#print(np.linalg.norm(B-C))
+#print(np.linalg.norm(C-D))
+#print(np.linalg.norm(A-D))
+#print(np.linalg.norm(B-D))
 
 
 #Generating all lines
