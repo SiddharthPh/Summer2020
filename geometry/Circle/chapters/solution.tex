@@ -1,0 +1,51 @@
+
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+	
+\item Show that $\vec{E},\vec{F},\vec{G},\vec{H}$ lies on a circle.
+\\
+\solution Let $\vec{V}$ be a general vector that satisfies the circle equation.
+\\
+Then, $\norm{V-C}=r$ will be the equation,
+\\
+where $\vec{C},r$ are Centre of circle, and radius respectively.
+\\
+Let us assume that the vectors $\vec{E},\vec{F},\vec{G}$ lie on the circle with the centre $\vec{C}=\myvec{x\\y}$
+\begin{align}
+\label{eq:ec}
+\norm{E-C}=r
+\\
+\label{eq:fc}
+\norm{F-C}=r
+\\
+\label{eq:gc}
+\norm{G-C}=r
+\end{align}
+By equating .\eqref{eq:ec}=.\eqref{eq:fc} and equating .\eqref{eq:fc}=.\eqref{eq:gc}, we can find the value of $\vec{C}$.
+\begin{align}
+\norm{\myvec{5.313-x\\2.657-y}}=\norm{\myvec{4.471-x\\2.236-y}}
+\\
+\norm{\myvec{4.471-x\\2.236-y}}=\norm{\myvec{5.119-x\\1.460-y}}
+\end{align}
+By solving the above two equations we get the value of $\vec{C}$
+\\
+$\therefore \vec{C}=\myvec{5.075\\2.081}$
+\\
+and by substituting the value of $\vec{C}$ in the equation .\eqref{eq:ec}, we get the value of r.
+$\therefore r=0.622$.
+\\
+To prove that Quadrilateral EFGH is a cyclic, then H should aslo lie on the circle.
+\\ 
+$\vec{H}$ should satisfy the general circle equation, $\norm{V-C}=r$.
+\\
+$\norm{H-C}=r$
+\begin{align}
+\norm{\myvec{5.545-5.075\\2.489-2.081}}=
+\norm{\myvec{0.470\\0.408}}=0.622
+\end{align}
+As $\vec{H}$ satisfies the general circle equation.
+\newline
+$\therefore$ Quadrilateral EFGH is a cyclic quadrilateral.
+
+\end{enumerate}
