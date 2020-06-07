@@ -1,6 +1,7 @@
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
+from scipy.stats import bernoulli
 #Bernoulli Distribution
 
 data_bern = bernoulli.rvs(size=1000,p=0.130)
