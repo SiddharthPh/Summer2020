@@ -23,13 +23,22 @@ data = {'Serial no.': inp ,
         'Values': inp1
         }
 df=pd.DataFrame(data,columns=['Serial no.', 'Values'])
+#Bernoulli Distribution
+
+data_bern = bernoulli.rvs(size=1000,p=0.130)
+ax = sns.distplot(data_bern,
+	                 kde=True,
+	                color='crimson',
+                  hist_kws={"linewidth": 20,'alpha':1})
+
+
 #plt.figure(figsize=(10,8))
 #sns.distplot(df['Values'], hist = True, kde = True,
                  #kde_kws = {'linewidth': 1},
                  #)
 #plt.plot(df['Serial no.'],(df['Values']))
-plt.hist(df['Values'], color = 'blue', edgecolor = 'black',
-         bins = int(1000))
-plt.xlabel('$Values$')
-plt.ylabel('$Number of dice throws$')
+#plt.hist(df['Values'], color = 'blue', edgecolor = 'black',
+ #        bins = int(1000))
+#plt.xlabel('$Values$')
+#plt.ylabel('$Number of dice throws$')
 plt.show()
