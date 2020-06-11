@@ -2,34 +2,32 @@
 \begin{enumerate}[label=\arabic*.,ref=\thesubsubsection.\theenumi]
 \numberwithin{equation}{enumi}
 %
-\item Let the boy be at point $\vec{B}=\myvec{0\\0}$
-\\
-Initially, it was initially raining downward at speed of 35 $m s^{-1}$ and when there is wind, it is raining downward at speed of 12 $m s^{-1}$.
-\\
-Let the boy be at origin.
-\\
-Let $\vec{u}$ be the initial rain vector = $\myvec{0\\35}$
-\\
-Let $\vec{v}$ be the final rain vector = $\myvec{l\\12}$(Where l is real number, and speed of rain in vertical direction changed to 12$m s^{-1}$)
-\\
-$\norm{\vec{u}}=\norm{\vec{v}}=35m s^{-1}$(As the speed of rain remains constant)
-The angle $\theta$ with the vertical, at which it is raining is calculated by:
+\item See Fig. \ref{fig:3.8.1_speed}.  From the given information,  the rain velocity is
 \begin{align}
-\vec{u}^T\vec{v}=\norm{\vec{u}}\norm{\vec{v}}\cos\theta
+\vec{u} = \myvec{0\\35}
+\end{align}
+%
+and the wind velocity is 
+\begin{align}
+\vec{v} = -\myvec{12\\0}
+\end{align}
+%
+The resulting rain velocity is 
+\begin{align}
+\vec{u}+\vec{v} = \myvec{-12\\35}
+\end{align}
+The desired angle is 
+\begin{align}
+-\tan^{-1}\phase{\vec{u}+\vec{v}} &= \tan^{-1}\frac{12}{35}
 \\
-\frac{12}{35}=\cos\theta
-\\
-\theta=69.96
+&\approx 20.05 \degree
 \end{align}  
-$\therefore$ Boy has to hold his umbrella at angle of $20.04 ^{\circ}$ with the ground towards east.
-\\
-The code for the diagramatic(\ref{fig:speed}) representation of the solution is
-\begin{lstlisting}
-codes/line/speed.py
-\end{lstlisting}
+%\begin{lstlisting}
+%solutions/1/codes/line/speed.py
+%\end{lstlisting}
 \begin{figure}[!ht]
 \includegraphics[width=\columnwidth]{./figs/line/speed.eps}
 \caption{}
-\label{fig:speed}
+\label{fig:3.8.1_speed}
 \end{figure}
 \end{enumerate}
