@@ -15,7 +15,7 @@ affine = np.array(([1,0],[0,1]))
 c =  np.array([3,2])
 
 #Original axes
-points = np.array([[0, 0], [0, 1],[1,0]])
+points = np.array([[0, 0], [0,6],[6,6],[6,0]])
 
 #Transformed axes
 affine_points = np.linalg.inv(affine)@(c+points).T
