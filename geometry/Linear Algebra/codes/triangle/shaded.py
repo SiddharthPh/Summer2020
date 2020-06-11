@@ -38,7 +38,7 @@ plt.plot(x_A1B1[0,:],x_A1B1[1,:],label='$line1$')
 #Intercept2
 A2 = c2*e1/(n2@e1)
 B2 = c2*e2/(n2@e2)
-x_A2B2 =   line_dir_pt(n2,D1,k1,k2)
+x_A2B2 =   line_gen(A2,B2)
 plt.plot(x_A2B2[0,:],x_A2B2[1,:],label='$line2$')
 
 
@@ -59,7 +59,10 @@ plt.plot(B[0], B[1], 'o')
 plt.text(B[0] * (1 ), B[1] * (1)+0.1 , 'B')
 plt.plot(C[0], C[1], 'o')
 plt.text(C[0] * (1 - 0.05), C[1] * (1 - 0.1) , 'C')
-
+plt.plot(B2[0], B2[1], 'o')
+plt.text(B2[0] * (1 ), B2[1] * (1)+0.1 , 'B2')
+plt.plot(B1[0], B1[1], 'o')
+plt.text(B1[0] * (1 ), B1[1] * (1)+0.1 , 'B1')
 plt.xlabel('$x$')
 plt.ylabel('$y$')
 plt.legend(loc='best')
