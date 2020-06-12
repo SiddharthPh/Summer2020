@@ -1,11 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-x = np.linspace(-3,3,100)
-p=np.poly1d([1,0,-1])
+x = np.linspace(-3,4,100)
+p=np.poly1d([1,-1,-2])
 for i in range(len(x)):
     y=p(x)
-
 roots=p.r
 A=np.array([roots[0],0])
 B=np.array([roots[1],0])

@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-x = np.linspace(-3,3,100)
-p=np.poly1d([1,0,-1])
+x = np.linspace(-1,1,100)
+p=np.poly1d([3,0,-1])
 for i in range(len(x)):
     y=p(x)
 
