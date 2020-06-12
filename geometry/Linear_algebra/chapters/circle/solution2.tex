@@ -1,0 +1,29 @@
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+ 
+\item The input values for the question are given in the table \eqref{table:table1}
+\begin{table}[ht!]
+\centering
+\input{./tables/circle/inp1.tex}
+\caption{Input Values}
+\label{table:table1}	
+\end{table}
+The $\vec{O}$ is the centre of circle=$\myvec{-3\\2}$, let $r$ be the radius of the circle=4.
+\\
+Let $\vec{x}$ satisfy the circle equation
+\begin{align}
+\vec{x}^T\myvec{1&0\\0&1}\vec{x}+\myvec{6&-4}\vec{x}
+\end{align}
+The python code for the figure \eqref{fig:circle} is
+\begin{lstlisting}
+codes/circle/circle1.py
+\end{lstlisting}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{./figs/circle/circle1.eps}
+\caption{Circle using python}
+\label{fig:circle}
+\end{figure}
+
+\end{enumerate}
