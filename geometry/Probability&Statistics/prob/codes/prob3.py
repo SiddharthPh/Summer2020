@@ -53,10 +53,10 @@ d6_twice.name = 'two dice'
 for die in [d6_twice]:
     xs, ys = die.render()
 data=random.choice(xs,p=ys,size=(1000))
-ax = sns.distplot(data,
-					bins=int(11),
-	                 kde=True,
-	                color='crimson',
-                  hist_kws={"linewidth": 20,'alpha':0.5})
-ax.set(xlabel='Sum_of_two_dice', ylabel='Probability')
-plt.show()
+# ax = sns.distplot(data,
+# 					bins=int(11),
+# 	                 kde=True,
+# 	                color='crimson',
+#                   hist_kws={"linewidth": 20,'alpha':0.5})
+# ax.set(xlabel='Sum_of_two_dice', ylabel='Probability')
+# plt.show()
