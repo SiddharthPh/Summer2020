@@ -53,6 +53,7 @@ d6_twice.name = 'two dice'
 for die in [d6_twice]:
     xs, ys = die.render()
 data=random.choice(xs,p=ys,size=(1000))
+print(xs[0],ys)
 # ax = sns.distplot(data,
 # 					bins=int(11),
 # 	                 kde=True,
